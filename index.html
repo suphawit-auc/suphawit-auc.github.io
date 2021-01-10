@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Basic HTML</title>    
-<style>pre{font-size:18; margin:25px;color:white;}
+<style>
+.deco {border: 5px solid white;padding:10px;display:table;background-color:black;}
+pre{font-size:18; margin:25px;color:white;}
 h2{background-color:white;}
 p{color:white;}
 span.tab { 
@@ -14,7 +16,7 @@ span.tab {
 <body style="background-color:#ff0505;">
     <h1>Hello World</h1>
         <h2>HTML Element</h2>
-        <div style="border: 5px solid white;padding:10px;display:table;background-color:black;">
+        <div class="deco">
         <p>
         ในการเขียน HTML ต้องเริ่มต้นเเละจบด้วย Tag เปิดปิดเสมอ<br>
         โดยที่ element จะอยู่ใน tag<br/>
@@ -50,6 +52,7 @@ span.tab {
         
         </div>
         <h2>HTML Attribute</h2>
+        <div class="deco">
         <p>Attribute คือตัวที่เอามารับค่าต่างๆซึ่งจะอยู่ข้างหน้า เเละ value ของมันจะอยู่ในเครื่องหมาย ""</p>
         <h3>Hyperlink</h3>
         <p>
@@ -77,7 +80,9 @@ span.tab {
         <p>
         ในช่อง src ให้ใส่ที่ที่เราเก็บรูปไว้ เเละสามารถกำหนดขนาดของรูปได้
         </p>
+        </div>
         <h2>Heading</h2>
+        <div class="deco">
         <p>
         ใน web เราสามาถกำหนด Heading ได้ตั้งเเต่ h1 ถึง h6 โดย h1 จะสำคัญมากสุด</p>
         &emsp;    <h1>Head1</h1>
@@ -86,8 +91,9 @@ span.tab {
         &emsp;    <h4>Head4</h4>
         &emsp;    <h5>Head5</h5>
         &emsp;    <h6>Head6</h6>
-        
+        </div>
         <h2>Paragraph</h2>
+        <div class="deco">
         <p>
         Element &lt;p&gt; ไว้สำหรับเเบ่งข้อมูลเป็นย่อหน้าๆ
         </p>
@@ -96,7 +102,9 @@ span.tab {
         &emsp;&lt;br&gt;   &ensp;ไว้ขึ้นบรรทัดใหม่<br>
         &emsp;&lt;pre&gt;   &ensp;ไว้พิมพ์ข้อความโดย web จะเเสดงผลตามที่เราจัดหน้าไว้ใน pre เลย<br>
         </p>
+        </div>
         <h2>Style</h2>
+        <div class="deco">
         <p>
         หากเราเพิ่ม Style ไปใน Element ต่างๆเราจะสามารถปรับเเต่ง ขนาดตัวอักษร Font สี เเละอื่นๆ ได้<br/>
         ยกตัวอย่างหากเราต้องการให้ Paragraph ถัดไปตัวอักษรสีชมพูเเละพื้นหลังสีดำ</p>
@@ -106,17 +114,23 @@ span.tab {
             </mark>
         </pre>
         <p style="background-color:black;color: pink; font-size: 24;">ทดลองจ้า</p>
+        </div>
         <h2>Formatting</h2>
+        <div class="deco">
         <p>มี element ที่เราสามารถนำมาเปลี่ยนรูปเเบบตัวอักษรได้เช่น </p>
         <p>
             &emsp;&lt;<small>small</small>&gt;   &ensp;ทำตัวเล็ก<br>
             &emsp;&lt;<strong>strong</strong>&gt;   &ensp;ทำตัวเข้ม<br>
             &emsp;&lt;<del>del</del>&gt;   &ensp;ไว้ขีดฆ่า<br>
         </p>
+        </div>
         <h2>Comment</h2>
+        <div class="deco">
         <p>ในการเขียน code เราสามารถเพิ่ม comment ไปได้โดยอะไรก็ตามที่เขียนใน comment จะไม่เเสดงใน browser </p>
         <pre>   &lt;!-- คอมเม้นตรงนี้ --&gt; </pre>
+        </div>
         <h2>CSS</h2>
+        <div class="deco">
         <p>CSS ย่อมาจาก Cascading Style Sheets ใช้เพื่อช่วยจัดการเเละตกเเต่งหน้าเว็บ<br/> 
            โดยที่เราสามารถเรียกใช้ได้ 3 เเบบ
         </p>
@@ -131,6 +145,7 @@ span.tab {
         &emsp;&lt;/style&gt;
         </p>
         <p>&emsp;3 เเบบ External คือการสร้างไฟล์ sheet ของ CSS ที่กำหนดสิ่งต่างๆไว้ข้างนอกเเละ link มาใช้ใน head</p>
+        </div>
         <hr>
 </body>
 </html>
