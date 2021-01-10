@@ -46,6 +46,7 @@ span.tab {
         <p><a href="#html_format">Format</a></p>
         <p><a href="#html_comment">Comment</a></p>
         <p><a href="#html_css">CSS</a></p>
+        <p><a href="#html_class">Class</a></p>
     </div>
     <h1>Hello World</h1>
         <h2 id="html_element">HTML Element</h2>
@@ -87,7 +88,7 @@ span.tab {
         <h2 id="html_attribute">HTML Attribute</h2>
         <div class="deco">
         <p>Attribute คือตัวที่เอามารับค่าต่างๆซึ่งจะอยู่ข้างหน้า เเละ value ของมันจะอยู่ในเครื่องหมาย ""</p>
-        <h3>Hyperlink</h3>
+        <h3 style="color: red;">Hyperlink</h3>
         <p>
         บนเว็บเราสามรถสร้าง hyperlink ได้โดยใช้ tag &lt;a&gt;
         </p>
@@ -100,7 +101,7 @@ span.tab {
         <p>
         ในช่อง href ให้ใส่ url ที่ต้องการเชื่อมเเละข้างหลังให้พิมพ์ข้อความที่ต้องการ
         </p>
-        <h3>ใส่รูป</h3>
+        <h3 style="color: red;">ใส่รูป</h3>
         <p>
         เราสามารถใส่รูปใน web ได้ด้วย tag &lt;image&gt;
         </p>
@@ -178,6 +179,30 @@ span.tab {
         &emsp;&lt;/style&gt;
         </p>
         <p>&emsp;3 เเบบ External คือการสร้างไฟล์ sheet ของ CSS ที่กำหนดสิ่งต่างๆไว้ข้างนอกเเละ link มาใช้ใน head</p>
+        </div>
+        <h2 id="html_class">Class</h2>
+        <div class="deco">
+        <p>Class คือสิ่งที่ระบุ Object ที่มี element เหมือนๆกัน<br>
+           ในหนึ่ง class จะมีได้หลาย element
+        </p>
+        <p>
+        ยกตัวอย่างเช่นเราต้องการเปลี่ยนสีตัวอักษรเเละพื้นหลังพร้อมกันเราก็สร้าง class ขึ้นมา
+        </p>
+        <pre>
+            สร้าง style ขื่อ .test
+            
+            .test{
+                background-color:orange;
+                color: black;
+              }
+        </pre>
+        <p>เมื่อเราต้องการเรียกใช้ class นี้เราก็เเค่ใช่ element<br/>
+        &emsp;&lt;div class="test"&gt;
+        <br/>
+        <br/>
+        <br/>
+        &emsp;&lt;/div&gt;
+        </p>
         </div>
         <hr>
 </body>
