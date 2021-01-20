@@ -3,6 +3,32 @@
 <head>
 <title>Basic HTML</title>    
 <style>
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  margin-top:-25px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border:1px solid white; 
+  
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:white;
+  color: black;
+}
 .sidebar{
     width: 130px;
     position: fixed;
@@ -36,6 +62,10 @@ span.tab {
 } </style>
 </head>
 <body style="background-color:lightgrey;">
+    <div class="topnav">
+        <p><a class="active" href="index.html">HTML</a></p>
+        <p><a href="jv.html">Java Script</a></p>
+    </div>
     <div class="sidebar">
         <p><a href="#html_element">Element</a></p>
         <p><a href="#html_attribute">Attribute</a></p>
