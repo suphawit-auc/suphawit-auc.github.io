@@ -1,6 +1,76 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
+<head>
+<title>Basic Java</title>    
+<style>
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  margin-top:-25px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border:1px solid white; 
+  
+}
+
+.topnav a:hover {
+  background-color:white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:white;
+  color: black;
+}
+.sidebar{
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    right:15px;
+    background: white;
+    overflow-x: hidden;
+    padding: 0px 0px;
+	border: 8px solid black;
+}
+.sidebar a{
+    padding: 0px 0px 0px 22px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+}
+.deco{
+    border: 5px solid black;
+    padding:20px;
+    margin:15px;
+    display:table;
+    background-color:whitesmoke;}
+pre{font-size:18; margin:25px;}
+h2{background-color:black;color:white;}
+span.tab { 
+	width: 10px; 
+	height: 100%; 
+	display: inline-block; 
+} </style>
+</head>
+<body style="background-color:lightgrey;">
+    <div class="topnav">
+        <p><a href="index.html">HTML</a></p>
+        <p><a class="active" href="jv.html">Java Script</a></p>
+    </div>
+    <div class="sidebar">
+        <p><a href="#jv_intro">Introduction</a></p>
+        <p><a href="#jv_output">Output</a></p>
+    </div>
+    <h2 id="jv_intro">Introduction</h2>
+    <h2 id="jv_output">Output</h2>
 </body>
 </html>
