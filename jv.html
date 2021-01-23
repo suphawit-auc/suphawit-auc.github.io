@@ -11,9 +11,33 @@
     </div>
     <div class="sidebar">
         <p><a href="#jv_intro">Introduction</a></p>
-        <p><a href="#jv_output">Output</a></p>
+        
+        <p><a href="#jv_function">Function</a></p>
     </div>
     <h2 id="jv_intro">Introduction</h2>
-    <h2 id="jv_output">Output</h2>
+    <div class="deco">
+        <p>ในการเขียน Java Script เราต้องเขียนใน Tag Script เสมอ</p>
+        <p>&emsp;&lt;script&gt;document.getElementById("demo").innerHTML = "Hello World"&lt;/script&gt;</p>
+    </div>
+    <h2 id="jv_output">Function</h2>
+    <div class="deco">
+        <p>เราสามารถเรียกใช้ได้ทั้งในส่วน Head เเละ Body เช่น</p>
+        <pre>
+            &lt;script&gt;
+                function testFunction() {
+                  document.getElementById("demo").innerHTML = "เปลี่ยนเเล้ว";
+                }
+            &lt;/script&gt;
+            &lt;p id="demo"&gt;ยังไม่เปลี่ยน&lt;/p&gt;
+            &lt;button type="button" onclick="testFunction()"&gt;ลองกดดู&lt;/button&gt;
+        </pre>
+        <script>
+            function testFunction() {
+              document.getElementById("demo").innerHTML = "เปลี่ยนเเล้ว";
+            }
+        </script>
+        <p id="demo">ยังไม่เปลี่ยน</p>
+        <button type="button" onclick="testFunction()">ลองกดดู</button>
+    </div>
 </body>
 </html>
