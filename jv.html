@@ -38,7 +38,33 @@
     </div>
     <h2 id="jv_output">Output</h2>
     <div class="deco">
-        
+    <p>เราสามารถเเสดงผล Java script ได้ 4 วิธี</p>
+    
+    <h3>inner HTML</h3> 
+    <p>โดย ID จะเป็นตัวกำหนด HTML ELement เเละกำหนดเนื้อหาใน innerHTML</p>
+    <pre>
+    &lt;p id="plustest"&gt;&lt;/p&gt;
+    &lt;script&gt;
+    document.getElementById("plustest").innerHTML = 5 + 6;
+    &lt;/script&gt;
+    </pre>
+    <p id="plustest"></p>
+    <script>
+    document.getElementById("plustest").innerHTML = 5 + 6;
+    </script>
+    <p>โดยโปรเเกรมก็จะเเสดงผลบวกออกมาตรงที่เรา p id = plustest</p>
+    
+    <h3>document.write()</h3>
+    <p>เเสดงผลผ่าน document.write() โดยวิธีนี้มีข้อเสียคือหากเรียกใช้งานหลังจาก Document โหลดจะไปเขียนทับข้อมูลอื่น</p>
+    <pre>
+    &lt;script&gt;
+    document.write("สวัสดีครับ");
+    &lt;/script&gt;
+    </pre>
+    <script>
+    document.write("สวัสดีครับ");
+    </script>
     </div>
+
 </body>
 </html>
